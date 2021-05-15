@@ -9,7 +9,7 @@ Check out the [official CDK bootstrapping documentation](https://docs.aws.amazon
 
 ## Deploy to Multiple Regions
 
-```yml{1,3,8-12}
+```yml{1}
 steps:
   - uses: actions/checkout@v2
   - uses: actions/setup-node@v2
