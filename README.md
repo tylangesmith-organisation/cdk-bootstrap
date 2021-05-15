@@ -7,19 +7,14 @@ To be able to use [AWS CDK](https://docs.aws.amazon.com/cdk/latest/guide/home.ht
 
 Check out the [official CDK bootstrapping documentation](https://docs.aws.amazon.com/cdk/latest/guide/bootstrapping.html)
 
-## Deploy to Multiple Regions
+## Deployment
 
-```yml{1}
-steps:
-  - uses: actions/checkout@v2
-  - uses: actions/setup-node@v2
-    with:
-      node-version: '14'
-  - run: ./bootstrap.sh
-    env:
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      REGION: ap-southeast-2
-```
+To deploy this repository there are a few repository secrets that we need to set. To add secrets against the repository checkout the [official documentation](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository) on how to achieve this.
 
+These secret variables are:
 
+| Variable              | Description                    |
+|-----------------------|--------------------------------|
+| ACCOUNT_ID            | The AWS Account ID             |
+| AWS_ACCESS_KEY_ID     | The IAM user Access Key ID     |
+| AWS_SECRET_ACCESS_KEY | The IAM user Secret Access Key |
