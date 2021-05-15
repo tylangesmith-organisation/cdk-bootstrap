@@ -6,9 +6,7 @@ jobs:
     name: Bootstrap CDK Toolkit to AWS Account
     runs-on: ubuntu-latest
     env:
-
       ACCOUNT_ID: ${{ secrets.ACCOUNT_ID }}
-      AWS_DEFAULT_REGION: ap-southeast-2
 
     # Only deploy on the master branch
     if: ${{ github.ref == 'refs/heads/master' }}
