@@ -1,0 +1,22 @@
+{
+  "name": "cdk-bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylangesmith/cdk-bootstrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylangesmith/cdk-bootstrap/issues"
+  },
+  "homepage": "https://github.com/tylangesmith/cdk-bootstrap#readme",
+  "dependencies": {
+    "aws-cdk": "^1.103.0"
+  }
+}
