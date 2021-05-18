@@ -3,7 +3,7 @@
 set -euo pipefail
 
 BRANCH_NAME=${GITHUB_REF##*/}
-TOOLKIT_STACK_NAME="cdk-toolkit-${BRANCH_NAME}-${ACCOUNT_ID}"
+TOOLKIT_STACK_NAME="cdk-toolkit-${BRANCH_NAME}"
 BUCKET_NAME="${TOOLKIT_STACK_NAME}-${ACCOUNT_ID}"
 
 # Install our npm dependencies
